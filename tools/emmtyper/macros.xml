@@ -1,0 +1,39 @@
+<macros>
+    <xml name="requirements">
+        <requirements>
+            <requirement type="package" version="@VERSION@">emmtyper</requirement>
+            <yield/>
+        </requirements>
+    </xml>
+    <xml name="version_command">
+        <version_command><![CDATA[emmtyper --version]]></version_command>
+    </xml>
+    <token name="@VERSION@">0.2.0</token>
+    <token name="@PROFILE@">21.05</token>
+    <xml name="edam_ontology">
+        <edam_topics>
+            <edam_topic>topic_0622</edam_topic>
+            <edam_topic>topic_3301</edam_topic>
+        </edam_topics>
+        <edam_operations>
+            <edam_operation>operation_0540</edam_operation>
+        </edam_operations>
+    </xml>
+    <xml name="xrefs">
+        <xrefs>
+            <xref type="bio.tools">emmtyper</xref>
+        </xrefs>
+    </xml>
+    <xml name="citations">
+        <citations>
+            <citation type="bibtex">
+  @UNPUBLISHED{Tan2019,
+      author = {Tan, Andre},
+      title = {emmtyper: command line tool for emm-typing of Streptococcus pyogenes},
+      year = {2019},
+      url = {https://github.com/MDU-PHL/emmtyper},
+  }
+          </citation>
+        </citations>
+    </xml>
+</macros>

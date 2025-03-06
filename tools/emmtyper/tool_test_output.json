@@ -1,0 +1,77 @@
+{
+    "summary": {
+        "num_errors": 0,
+        "num_failures": 0,
+        "num_skips": 0,
+        "num_tests": 1
+    },
+    "tests": [
+        {
+            "data": {
+                "inputs": {
+                    "input1": {
+                        "id": "332ec01c52b77bc7",
+                        "src": "hda"
+                    }
+                },
+                "job": {
+                    "command_line": "emmtyper \"/tmp/tmp5swmt3ox/files/d/a/a/dataset_daa0aa8b-fc9b-4964-b76f-15f7c82afbb0.dat\" > \"/tmp/tmp5swmt3ox/job_working_directory/000/2/outputs/dataset_2434e0d9-f9cb-437a-ad48-f40978767397.dat\"",
+                    "command_version": "",
+                    "copied_from_job_id": null,
+                    "create_time": "2025-03-06T00:21:20.576750",
+                    "dependencies": [],
+                    "exit_code": 0,
+                    "external_id": "75123",
+                    "galaxy_version": "25.0",
+                    "handler": null,
+                    "history_id": "332ec01c52b77bc7",
+                    "id": "5714d53e3033558b",
+                    "inputs": {
+                        "input1": {
+                            "id": "332ec01c52b77bc7",
+                            "src": "hda",
+                            "uuid": "daa0aa8b-fc9b-4964-b76f-15f7c82afbb0"
+                        }
+                    },
+                    "job_messages": [],
+                    "job_metrics": [],
+                    "job_runner_name": null,
+                    "job_stderr": "",
+                    "job_stdout": "",
+                    "model_class": "Job",
+                    "output_collections": {},
+                    "outputs": {
+                        "output1": {
+                            "id": "5714d53e3033558b",
+                            "src": "hda",
+                            "uuid": "2434e0d9-f9cb-437a-ad48-f40978767397"
+                        }
+                    },
+                    "params": {
+                        "__input_ext": "\"input\"",
+                        "chromInfo": "\"/home/maxcu/RDH/tooldev/galaxy/tool-data/shared/ucsc/chrom/?.len\"",
+                        "dbkey": "\"?\"",
+                        "emmtyper_db": null
+                    },
+                    "state": "ok",
+                    "stderr": "INFO:emmtyper.bin.run_emmtyper:Start running emmtyper on 1 queries.\nINFO:emmtyper.objects.blast:Running command /home/maxcu/miniconda3/envs/__emmtyper@_uv_/bin/blastn -db \"\\\"/home/maxcu/miniconda3/envs/__emmtyper@_uv_/lib/python3.13/site-packages/emmtyper/db/emm.fna\"\\\" -query /tmp/tmp5swmt3ox/files/d/a/a/dataset_daa0aa8b-fc9b-4964-b76f-15f7c82afbb0.dat -dust no -perc_identity 95 -culling_limit 5 -outfmt \"6 std slen\"\nINFO:emmtyper.bin.run_emmtyper:Finished emmtyper.\n",
+                    "stdout": "",
+                    "tool_id": "emmtyper",
+                    "tool_stderr": "INFO:emmtyper.bin.run_emmtyper:Start running emmtyper on 1 queries.\nINFO:emmtyper.objects.blast:Running command /home/maxcu/miniconda3/envs/__emmtyper@_uv_/bin/blastn -db \"\\\"/home/maxcu/miniconda3/envs/__emmtyper@_uv_/lib/python3.13/site-packages/emmtyper/db/emm.fna\"\\\" -query /tmp/tmp5swmt3ox/files/d/a/a/dataset_daa0aa8b-fc9b-4964-b76f-15f7c82afbb0.dat -dust no -perc_identity 95 -culling_limit 5 -outfmt \"6 std slen\"\nINFO:emmtyper.bin.run_emmtyper:Finished emmtyper.\n",
+                    "tool_stdout": "",
+                    "update_time": "2025-03-06T00:22:26.664764",
+                    "user_email": "planemo@galaxyproject.org",
+                    "user_id": "332ec01c52b77bc7"
+                },
+                "status": "success",
+                "test_index": 0,
+                "time_seconds": 72.23313450813293,
+                "tool_id": "emmtyper",
+                "tool_version": "0.1.0+galaxy0"
+            },
+            "has_data": true,
+            "id": "emmtyper-0"
+        }
+    ],
+    "version": "0.1"
+}

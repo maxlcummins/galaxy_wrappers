@@ -1,0 +1,8 @@
+categories: [Sequence Analysis]
+description: command line tool for emm-typing of Streptococcus pyogenes
+long_description: |
+  Emmtyper is a command line tool for emm-typing of Streptococcus pyogenes
+homepage_url: https://github.com/MDU-PHL/emmtyper
+name: emmtyper
+owner: maxlcummins
+remote_repository_url: https://github.com/maxlcummins/galaxy_wrappers/tree/main/tools/emmtyper/
