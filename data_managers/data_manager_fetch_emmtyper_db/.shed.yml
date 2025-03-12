@@ -1,0 +1,11 @@
+categories:
+- Data Managers
+description: Contains a data manager that defines and populates the emmtyper
+  tool data table.
+homepage_url: https://github.com/maxlcummins/galaxy_wrappers
+long_description: |
+    Download untrimmed M type-specific untrimmed peptide database for emmtyper
+name: data_manager_fetch_emmtyper_db
+owner: maxlcummins
+remote_repository_url: https://github.com/maxlcummins/galaxy_wrappers/tree/main/data_managers/data_manager_fetch_emmtyper_db/
+type: unrestricted
