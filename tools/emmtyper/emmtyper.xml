@@ -1,18 +1,19 @@
-<tool id="emmtyper" name="Emm-typing of Streptococcus pyogenes" version="0.1.0+galaxy0" python_template_version="3.5" profile="21.05">
-    <requirements>
-        <requirement type="package" version="v0.2.0">emmtyper</requirement>
-    </requirements>
+<tool id="emmtyper" name="Emm-typing of Streptococcus pyogenes" version="@VERSION@+galaxy0" profile="@PROFILE@">
+    <description>
+        emmtyper is a command line tool for emm-typing of Streptococcus pyogenes using a de novo or complete assembly.
+    </description>
+    <macros>
+        <import>macros.xml</import>
+    </macros>
+    <expand macro="edam_ontology"/>
+    <expand macro="xrefs"/>
+    <expand macro="requirements"/>
+    <expand macro="version_command"/>
     <command detect_errors="exit_code"><![CDATA[
-        #if $emmtyper_db
-        makeblastdb -in "$emmtyper_db" -title emmtyper -dbtype nucl && \
-        emmtyper "$input1" --blast_db "$emmtyper_db" > "$output1"
-        #else
         emmtyper "$input1" > "$output1"
-        #end if
     ]]></command>
     <inputs>
         <param name="input1" type="data" format="fna,fasta,fas,fa" />
-        <param name="emmtyper_db" type="data" format="fna,fasta,fas,fa" label="Emmtyper database" optional="true" help="Trimmed nucleotide database from https://ftp.cdc.gov/pub/infectious_diseases/biotech/emmsequ/" />
     </inputs>
     <outputs>
         <data name="output1" format="tsv"/>
